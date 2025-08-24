@@ -1,4 +1,4 @@
-# Node.js Example App with SSO powered by WorkOS
+# Node.js Example App with SSO powered by WorkOS and edited by Michael Fogel
 
 An example application demonstrating how to use the [WorkOS Node.js SDK](https://github.com/workos/workos-node) to authenticate users via SSO.
 
@@ -8,18 +8,11 @@ Node.js version 10+
 
 ## Node.js Project Setup
 
-1. Clone the main repo and install dependencies for the app you'd like to use:
+1. Clone this repo and install dependencies for the app you'd like to use:
 
     ```bash
     # HTTPS
-    git clone https://github.com/workos/node-example-applications.git
-    ```
-
-    or
-
-    ```bash
-    # SSH
-    git clone git@github.com:workos/node-example-applications.git
+    git clone https://github.com/mikefogelj/WorkOS-SSO-Example.git
     ```
 
 2. Navigate to the SSO app within the cloned repo.
