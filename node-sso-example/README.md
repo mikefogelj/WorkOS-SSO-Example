@@ -28,8 +28,9 @@ Node.js version 10+
 
 ## Configure your environment (.env already created, using my API Key and Client ID)
 
-4. Grab your API Key and Client ID from your WorkOS Dashboard. Create a `.env`
-   file at the project root, and store them like so:
+4. Create a `.env` file in the project root folder (node-sso-example).
+
+5. Grab your API Key and Client ID from your WorkOS Dashboard in the "API Keys" section, and enter these in the .env file like so:
 
     ```bash
     WORKOS_API_KEY=sk_xxxxxxxxxxxxx
@@ -38,23 +39,23 @@ Node.js version 10+
 
 ## Testing the Integration
 
-5. Start the server by running the following command: 
+6. Start the server by running the following command: 
 
 ```sh
 npm start
 ```
 
-6. Once that is done, head over to http://localhost:8000/ in any browser to begin the login flow. You should see the following options:
+7. Once that is done, head over to http://localhost:8000/ in any browser to begin the login flow. You should see the following options:
 - Google OAuth
 - Microsoft OAuth
 - Enterprise SAML
 
-7. To test Google, Click button and login with your Google account.
-8. To test Microsoft, Click button and login with your Microsoft account.
-9. To test IdP login, click this button 
+8. To test Google, Click button and login with your Google account.
+9. To test Microsoft, Click button and login with your Microsoft account.
+10. To test IdP login, click this button 
 or 
 navigate to [Test SSO - Identity provider-initiated SSO](https://dashboard.workos.com/environment_01K39X8ZAPJRKSV4A2B0PGWAP2/test-sso/idp-initiated) and click the "Continue" button.
-10. On the "Return an SSO Profile tab, enter an email followed by "@example.com", along with a first and last name.
-11. Click "Continue" button.
-12. Congrats! You should now be redirected to the succes page and see the name, followed by organization ID/name, and the JSON of the profile. 
+11. On the "Return an SSO Profile tab, enter an email followed by "@example.com", along with a first and last name.
+12. Click "Continue" button.
+13. Congrats! You should now be redirected to the succes page and see the name, followed by organization ID/name, and the JSON of the profile. 
 
