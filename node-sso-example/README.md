@@ -26,7 +26,7 @@ Node.js version 10+
     npm install
     ```
 
-## Configure your environment
+## Configure your environment (.env already created, using my API Key and Client ID)
 
 4. Grab your API Key and Client ID from your WorkOS Dashboard. Create a `.env`
    file at the project root, and store them like so:
@@ -36,22 +36,25 @@ Node.js version 10+
     WORKOS_CLIENT_ID=project_xxxxxxxxxxxx
     ```
 
-## SSO Setup with WorkOS
-
-5. Follow the [SSO authentication flow instructions](https://workos.com/docs/sso/guide/introduction) to create a new SSO connection in your WorkOS dashboard.
-
-6. Add `http://localhost:8000/callback` as a Redirect URI in the Configuration section of the Dashboard.
-
-7. Update `routes/index.js` with the Organization ID.
-
 ## Testing the Integration
 
-8. Start the server and head to http://localhost:8000/ to begin the login flow:
+5. Start the server by running the following command: 
 
 ```sh
 npm start
 ```
 
-## Need help?
+6. Once that is done, head over to http://localhost:8000/ in any browser to begin the login flow. You should see the following options:
+- Google OAuth
+- Microsoft OAuth
+- Enterprise SAML
 
-If you get stuck and aren't able to resolve the issue by reading our [WorkOS Node.js SDK documentation](https://docs.workos.com/sdk/node), API reference, or tutorials, you can reach out to us at support@workos.com and we'll lend a hand.
+7. To test Google, Click button and login with your Google account.
+8. To test Microsoft, Click button and login with your Microsoft account.
+9. To test IdP login, click this button 
+or 
+navigate to [Test SSO - Identity provider-initiated SSO](https://dashboard.workos.com/environment_01K39X8ZAPJRKSV4A2B0PGWAP2/test-sso/idp-initiated) and click the "Continue" button.
+10. On the "Return an SSO Profile tab, enter an email followed by "@example.com", along with a first and last name.
+11. Click "Continue" button.
+12. Congrats! You should now be redirected to the succes page and see the name, followed by organization ID/name, and the JSON of the profile. 
+
