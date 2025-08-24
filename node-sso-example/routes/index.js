@@ -25,6 +25,12 @@ router.get('/', function (req, res) {
         res.render('login_successful.ejs', {
             profile: session.profile,
             first_name: session.first_name,
+            // Setter for last name
+            last_name: session.last_name,
+            // Setter for organization name
+            organization_name: session.organization_name,
+            // Setter for organization ID
+            organization_id: session.organization_id,
         })
     } else {
         res.render('index.ejs', { title: 'Home' })
@@ -69,9 +75,20 @@ router.get('/callback', async (req, res) => {
             })
             const json_profile = JSON.stringify(profile, null, 4)
 
+            // API Call for organization information
+            const organization = await workos.organizations.getOrganization(
+                'org_01K39X8ZKQV57D1XBSH9335FQ7',
+            );
+
             session.first_name = profile.profile.first_name
+            // Setter for last name
+            session.last_name = profile.profile.last_name
             session.profile = json_profile
             session.isloggedin = true
+            // Setter for organization ID
+            session.organization_id = organization.id
+            // Setter for organization name
+            session.organization_name = organization.name
         }
     } catch (error) {
         errorMessage = `Error exchanging code for profile: ${error}`
