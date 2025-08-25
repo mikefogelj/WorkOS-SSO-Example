@@ -30,7 +30,11 @@ Node.js version 10+
 
 4. Create a `.env` file in the project root folder (node-sso-example).
 
-5. Grab your API Key and Client ID from your WorkOS Dashboard in the "API Keys" section, and enter these in the .env file like so:
+5. In the "Redirects" section on the WorkOS Dashboard, add http://localhost:8000/callback as the default Redirect URI.
+
+- More information on how to do this can be found here: https://workos.com/docs/sso/redirect-uris
+
+6. Grab your API Key and Client ID from your WorkOS Dashboard in the "API Keys" section, and enter these in the .env file like so:
 
     ```bash
     WORKOS_API_KEY=sk_xxxxxxxxxxxxx
@@ -39,13 +43,13 @@ Node.js version 10+
 
 ## Testing the Integration
 
-6. Start the server by running the following command: 
+7. Start the server by running the following command: 
 
 ```
 npm start
 ```
 
-7. Once that is done, head over to http://localhost:8000/ in any browser to begin the login flow. You should see the following options:
+8. Once that is done, head over to http://localhost:8000/ in any browser to begin the login flow. You should see the following options:
    
 **- Google OAuth**
   
@@ -61,15 +65,15 @@ https://github.com/user-attachments/assets/78ddf53d-a919-4b33-bf6c-496fc082306e
 
 https://github.com/user-attachments/assets/f5185e89-513e-48d5-bb96-da89d793b4d8
 
-8. To test Google, click the button and log in with your Google account.
+9. To test Google, click the button and log in with your Google account.
 
-9. To test Microsoft, click the button and log in with your Microsoft account.
+10. To test Microsoft, click the button and log in with your Microsoft account.
 
-10. To test IdP login, click the "Enterprise SAML" button **or** navigate to [Test SSO - Identity provider-initiated SSO](https://dashboard.workos.com/environment_01K39X8ZAPJRKSV4A2B0PGWAP2/test-sso/idp-initiated) and click the "Continue" button.
+11. To test IdP login, click the "Enterprise SAML" button **or** navigate to [Test SSO - Identity provider-initiated SSO](https://dashboard.workos.com/environment_01K39X8ZAPJRKSV4A2B0PGWAP2/test-sso/idp-initiated) and click the "Continue" button.
 
-11. On the "Return an SSO Profile tab, enter an email followed by "@example.com", along with a first and last name.
+12. On the "Return an SSO Profile tab, enter an email followed by "@example.com", along with a first and last name.
 
-12. Click the "Continue" button.
+13. Click the "Continue" button.
 
-13. Congrats! You should now be redirected to the success page and see the name, followed by organization ID/name, and the JSON of the profile. 
+14. Congrats! You should now be redirected to the success page and see the name, followed by organization ID/name, and the JSON of the profile. 
 
