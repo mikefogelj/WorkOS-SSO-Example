@@ -51,11 +51,14 @@ npm start
 - Enterprise SAML
 
 8. To test Google, Click button and login with your Google account.
+
 9. To test Microsoft, Click button and login with your Microsoft account.
-10. To test IdP login, click this button 
-or 
-navigate to [Test SSO - Identity provider-initiated SSO](https://dashboard.workos.com/environment_01K39X8ZAPJRKSV4A2B0PGWAP2/test-sso/idp-initiated) and click the "Continue" button.
+
+10. To test IdP login, click this button or navigate to [Test SSO - Identity provider-initiated SSO](https://dashboard.workos.com/environment_01K39X8ZAPJRKSV4A2B0PGWAP2/test-sso/idp-initiated) and click the "Continue" button.
+
 11. On the "Return an SSO Profile tab, enter an email followed by "@example.com", along with a first and last name.
+
 12. Click "Continue" button.
+
 13. Congrats! You should now be redirected to the succes page and see the name, followed by organization ID/name, and the JSON of the profile. 
 
