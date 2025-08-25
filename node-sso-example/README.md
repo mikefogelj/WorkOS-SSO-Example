@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/7843cb19-7ac1-4001-936a-5bc15c2a625b
 
 https://github.com/user-attachments/assets/78ddf53d-a919-4b33-bf6c-496fc082306e
 
-https://github.com/user-attachments/assets/f5185e89-513e-48d5-bb96-da89d793b4d8
+https://github.com/user-attachments/assets/7145c1e6-d67a-4591-b4fd-14afa3bf252b
 
 9. To test Google, click the button and log in with your Google account.
 
