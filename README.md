@@ -2,7 +2,7 @@
 
 In this Github repo, you will find two written responses to the mock customer emails as well as an example application demonstrating use of the [WorkOS Node SDK](https://github.com/workos-inc/workos-node) for SSO. Once you follow the steps to login with SSO, you will see a welcome screen with the first and last name used to sign in as well as the organization ID and the [organization name](https://workos.com/docs/reference/organization/get). 
 
-## Written response for Email #1
+## Written response for Email #1 ([PDF HERE](https://github.com/mikefogelj/WorkOS-SSO-Example/blob/my-sso-work/WorkOS%20Email%201.pdf))
 
 Hi Mark, 
 
@@ -25,7 +25,7 @@ Please let me know if you have any other questions!
 Best,
 Michael Fogel (Developer Success Engineer)
 
-## Written response for Email #2
+## Written response for Email #2 ([PDF HERE](https://github.com/mikefogelj/WorkOS-SSO-Example/blob/my-sso-work/WorkOS%20Email%202.pdf))
 
 Hi Julia, 
 
