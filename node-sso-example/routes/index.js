@@ -19,6 +19,8 @@ const clientID = process.env.WORKOS_CLIENT_ID
 const organizationID = 'org_test_idp'
 const redirectURI = 'http://localhost:8000/callback'
 const state = ''
+// Hardcoded org ID for API call, just set here to make it cleaner when calling later in API call.
+const orgID = 'org_01K39X8ZKQV57D1XBSH9335FQ7';
 
 router.get('/', function (req, res) {
     if (session.isloggedin) {
@@ -75,10 +77,8 @@ router.get('/callback', async (req, res) => {
             })
             const json_profile = JSON.stringify(profile, null, 4)
 
-            // API Call for organization information
-            const organization = await workos.organizations.getOrganization(
-                'org_01K39X8ZKQV57D1XBSH9335FQ7',
-            );
+            // API Call for organization information, using hardcoded orgID above. This call helps me get bonus points since it allows me to display the organization name.
+            const organization = await workos.organizations.getOrganization(orgID);
 
             session.first_name = profile.profile.first_name
             // Setter for last name
